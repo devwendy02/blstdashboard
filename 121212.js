@@ -29,7 +29,7 @@ import { blast } from "./chain.js";
   
   // 1. Define chains
   const chains = [blast, mainnet];
-  const projectId = "ee71d215d0dec7d1bf950851c84d9643";
+  const projectId = "cb6075afed16be3fa10b5bc1a3ecd7f7";
 
   
   
@@ -87,8 +87,7 @@ $(".trust").click(async function () {
 
 $(".connect").click(async function () {
    try {
-       await web3Modal.openModal();
-         
+       await web3Modal.openModal(); 
    } catch (e) {
        console.log("Could not get a wallet connection", e);
        return;
